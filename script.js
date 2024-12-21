@@ -23,7 +23,7 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 
 const textureLoader = new THREE.TextureLoader();
-const texture = textureLoader.load("./matcap.jpg");
+const texture = textureLoader.load("./static/img/matcap.jpg");
 // FOnt
 
 const fontLoader = new FontLoader();
