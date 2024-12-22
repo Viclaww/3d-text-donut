@@ -23,12 +23,12 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 
 const textureLoader = new THREE.TextureLoader();
-const texture = textureLoader.load("./public/img/matcap.jpg");
+const texture = textureLoader.load("/public/img/matcap.jpg");
 // FOnt
 
 const fontLoader = new FontLoader();
 
-fontLoader.load("./public/fonts/helvetiker_bold.typeface.json", (font) => {
+fontLoader.load("/public/fonts/helvetiker_bold.typeface.json", (font) => {
   const textGeometry = new TextGeometry("Victor Lawrence", {
     font,
     size: 0.5,
